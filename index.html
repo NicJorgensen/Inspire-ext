@@ -4,27 +4,65 @@
 	<meta charset="UTF-8">
 	<title>Inspire</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<div class="container-fluid">
 
-	<div id="quote">
-		The Quote
-	</div>
+		<div class="row">
 
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
+			<div class="col">
 
+				<div id="weather">
+					Your Weather Template
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+
+				<div id="quote">
+					The Quote
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col">
+
+				<div>
+					<form onsubmit="app.controllers.todoCtrl.addTodo(event)" id="todo-form">
+						<input type="text" class="form-control" name="title" placeholder="New ToDo" required>
+						<input type="text" class="form-control" name="due" placeholder="Do by..." required>
+						<button type="submit" class="btn btn-primary">Add ToDo</button>
+					</form>
+				</div>
+				
+			</div>
+			
+			<div class="col">
+				<div id="todo"></div>
+			</div>
+
+		</div>
+
+	</div>
 
 
 
 	<!--JS Libraries-->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 	<!--Services-->
 	<script src="app/components/weather/weather-service.js"></script>

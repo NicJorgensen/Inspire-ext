@@ -16,6 +16,4 @@ function QuoteController() {
 		`
 		quoteElem.innerHTML = template
 	}
-
-
 }

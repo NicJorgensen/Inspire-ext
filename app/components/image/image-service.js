@@ -6,7 +6,6 @@ function ImageService() {
 	this.getImage = function (cb) {
 		return $.get(apiUrl, function (res) {
 			res = JSON.parse(res)
-			console.log('Image Data:', res)
 			cb(res)
 		})
 	}
