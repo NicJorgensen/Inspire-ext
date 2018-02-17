@@ -3,7 +3,7 @@
 }
 
 body{
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat
 }
@@ -15,6 +15,13 @@ body{
     align-items: flex-end
 }
 
+.flex-todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
 .bg-1{
     padding-top: 10px;
     padding-left: 10px;
@@ -22,6 +29,7 @@ body{
     background-color: rgba(190, 189, 189, 0.6);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    height: 85px
 }
 
 .bg-2{
@@ -30,14 +38,38 @@ body{
     padding-right: 20px;
     padding-bottom: 15px;
     padding-top: 25px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px
+    border-radius: 30px
+}
+
+.bg-3{
+    background-color: rgba(190, 189, 189, 0.6);
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 400px;
+    height: 85px
+}
+
+.bg-4{
+    background-color: rgba(190, 189, 189, 0.6);
+    padding: 20px;
+    border-radius: 30px;
+    width: 175px;
+    height: 100px
 }
 
 .white-text{
-    color: rgb(242, 255, 253)
+    color: rgb(255, 255, 255)
 }
 
 .footer{
-    height:77vh
+    height:25vh
+}
+
+form{
+    width: 175px
+}
+
+.row-todo{
+    height: 55vh
 }

@@ -12,7 +12,21 @@
 <body id="body">
 	<div class="container-fluid full">
 
-		<div class="row">
+		<div class="row align-items-start">
+
+			<div class="col-sm-4 text-center flex-todo">
+				<div>
+
+					<form onsubmit="app.controllers.todoCtrl.addTodo(event)" id="todo-form" class="bg-3 flex-todo">
+						<input type="text" class="form-control text-field" name="title" placeholder="I need to. . ." required>
+						<input type="text" class="form-control text-field" name="due" placeholder="by. . ." required>
+						<button type="submit" class="btn btn-secondary">Add to List</button>
+
+					</form>
+				</div>
+
+			</div>
+
 
 			<div class="col flex-weather">
 
@@ -23,35 +37,23 @@
 
 		</div>
 
-		<div class="row">
-			<div class="col">
+		<div class="row row-todo">
 
-
-			</div>
-		</div>
-
-		<div class="row">
-
-			<div class="col">
-
-				<div>
-					<form onsubmit="app.controllers.todoCtrl.addTodo(event)" id="todo-form">
-						<input type="text" class="form-control" name="title" placeholder="New ToDo" required>
-						<input type="text" class="form-control" name="due" placeholder="Do by..." required>
-						<button type="submit" class="btn btn-primary">Add ToDo</button>
-					</form>
+			<div class="col-sm-10 flex-todo">
+				<div class="row">
+					<div class="col">
+						<div id="todo" class="flex-todo"></div>
+					</div>
 				</div>
-
 			</div>
 
-			<div class="col">
-				<div id="todo"></div>
-			</div>
+
 
 		</div>
+
 		<div class="row justify-content-center align-items-end footer">
 
-			<div class="col-sm-6 text-center">
+			<div class="col-sm-8 text-center">
 
 				<div id="quote">
 				</div>

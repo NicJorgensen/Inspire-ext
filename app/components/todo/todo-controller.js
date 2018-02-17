@@ -11,7 +11,7 @@ function TodoController() {
 		var template = ''
 		todos.forEach(todo => {
 			template += `
-			<h5 class="delete"><input id="checkbox" type="checkbox" onclick="app.controllers.todoCtrl.removeTodo('${todo.id}')">${todo.title} by: ${todo.due}</h5>
+			<h5 class="bg-4 text-center"><input id="checkbox" type="checkbox" onclick="app.controllers.todoCtrl.removeTodo('${todo.id}')"> ${todo.title} by: ${todo.due}.</h5>
 			`
 		})
 		todoElem.innerHTML = template 
@@ -33,5 +33,5 @@ function TodoController() {
 	}
 
 	getTodos()
-
+	
 }
