@@ -10,9 +10,10 @@ function QuoteController() {
 	function draw(res) {
 		var quote = res
 		template = `
+		<div class="bg-2">
 		<h3>"${quote.quote}"</h3>
 		<p>${quote.author}</p>
-		<a href="${quote.permalink}">Source</a>
+		</div>
 		`
 		quoteElem.innerHTML = template
 	}

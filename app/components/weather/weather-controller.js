@@ -11,9 +11,8 @@ function WeatherController() {
 
 	function draw(res) {
 		var template = `
-		<h4>${res.name}</h4>
-		<h5>${convertToF(res.main.temp)}</h5>
-		<p>High: ${convertToF(res.main.temp_max)} Low: ${convertToF(res.main.temp_min)}</p>
+		<h4><i class="fas fa-cloud white-text"></i> ${res.name} ${convertToF(res.main.temp)} &#x2109</h4>
+		<p>High: <b>${convertToF(res.main.temp_max)}&#x2109</b> Low: <b>${convertToF(res.main.temp_min)}&#x2109</b></p>
 		`
 		weatherElem.innerHTML = template
 	}
