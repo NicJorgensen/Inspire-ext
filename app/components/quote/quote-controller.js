@@ -11,8 +11,8 @@ function QuoteController() {
 		var quote = res
 		template = `
 		<div class="bg-2">
-		<h6>"${quote.quote}"</h6>
-		<p>${quote.author}</p>
+		<h6 class="cursor">"${quote.quote}"</h6>
+		<p class="hidden">${quote.author}</p>
 		</div>
 		`
 		quoteElem.innerHTML = template

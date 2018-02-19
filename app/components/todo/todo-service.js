@@ -55,7 +55,6 @@ function TodoService() {
 	}
 
 	this.removeTodo = function (todoId, cb) {
-		// Umm this one is on you to write.... It's also unique, like the ajax call above. The method is a DELETE
 		$.ajax({
 			url: baseUrl + "/" + todoId,
 			method: 'DELETE'

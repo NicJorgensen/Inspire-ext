@@ -1,5 +1,4 @@
 function TodoController() {
-	// toggleTodoStatus takes in a todo marks its status as completed and puts it to the server
 	var todoService = new TodoService()
 	var todoElem = document.getElementById('todo')
 
